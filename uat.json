@@ -1,0 +1,4 @@
+{
+   "extends" : "./cypress.json",
+   "baseUrl": "https://bptuat.thaibevapp.com/survey-management"
+}

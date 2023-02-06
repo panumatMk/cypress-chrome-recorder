@@ -5,6 +5,8 @@
   "main": "record-1.cy.js",
   "scripts": {
     "start": "npx cypress open",
+    "start:dev": "npx cypress open --env configFile=dev",
+    "start:uat": "npx cypress open --env configFile=uat",
     "gen": "npx @cypress/chrome-recorder ./record.json -o=./cypress/e2e && rm ./record.json"
   },
   "author": "",

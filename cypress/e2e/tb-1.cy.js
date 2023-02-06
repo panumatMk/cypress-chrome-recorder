@@ -1,14 +1,15 @@
 describe("Create Survey", () => {
 it("tests", () => {
 
-  cy.visit("https://bptdev.thaibevapp.com/survey-management");
+  let url = Cypress.config().baseUrl;
+  cy.visit(url);
 
   cy.get("[id=Username]").type("CROSS001");
 
   cy.get("[id=Password]").type("CROSS001");
 
   cy.get("[id=btnLogin]").click();
-  cy.location("href").should("eq", "https://bptdev.thaibevapp.com/survey-management");
+  cy.location("href").should("eq", url);
 
   cy.get("[id=btn-create-survey] > span").click();
 
