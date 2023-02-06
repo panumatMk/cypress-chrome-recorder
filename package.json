@@ -4,7 +4,8 @@
   "description": "1. ctrl + shift + p 2. search `recorder` 3. select top of list s # Start Record 1. key name 2. start record 3. export to json file",
   "main": "record-1.cy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx cypress open",
+    "gen": "npx @cypress/chrome-recorder ./record.json -o=./cypress/e2e && rm ./record.json"
   },
   "author": "",
   "license": "ISC",

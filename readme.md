@@ -16,4 +16,4 @@
 # Open cypress
 `npx cypress open`
 
-npx @cypress/chrome-recorder ./Recording.json -o=./cypress/e2e# cypress-chrome-recorder
+npx @cypress/chrome-recorder ./tb-1.json -o=./cypress/e2e
